@@ -1,0 +1,449 @@
+@font-face {
+    font-family: 'Otomanopee One';
+    src: url(OtomanopeeOne-Regular.ttf);
+}
+
+
+
+* {
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Otomanopee One';
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    background-color: #F3F4ED;
+    padding: .5rem;
+}
+
+.sh {
+    margin-top: 3rem;
+    opacity: .2;
+}
+
+
+
+.legend1 {
+    text-align: center;
+    background-color: #3c3f41b4;
+    font-family: 'Otomanopee One';
+    font-size: 25px;
+    color: #463c2f;
+    height: 21rem;
+    position: relative;
+    margin-bottom: 1.5rem; 
+    border-radius: 10px;
+    box-shadow: 4px 4px 10px 0px rgba(0,0,0,0.57);
+    
+}
+
+.p1 {
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%); 
+text-shadow: 3px 5px 20px rgba(43,72,73,0.6);
+}
+
+.contenedor {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+
+
+
+/* BOTÓN RADIO OCULTO */
+
+ input[type='radio'] {
+     opacity: 0; 
+}
+
+
+
+
+
+
+
+
+
+/* RESPUESTAS */
+
+label[for='bard-field'],label[for='l1'],label[for='m1'],label[for='v1'],label[for='x1']
+ {
+    font-size: 14px;
+    
+    text-align: center;
+    
+    color: whitesmoke;
+    background-color: #334257;
+    width: 80%;
+    height: 5rem;
+    line-height: 5rem;
+    
+    cursor: pointer;
+    border-radius: 20px;
+    box-shadow: 17px 12px 18px -12px rgba(0,0,0,0.8);
+    margin-bottom: 2rem;
+}
+label[for='bard-field']:active {
+    transform: scale(.98);
+    box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+}
+label[for='l1']:active {
+    transform: scale(.98);
+    box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+}
+label[for='m1']:active {
+    transform: scale(.98);
+    box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+}
+label[for='v1']:active {
+    transform: scale(.98);
+    box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+}
+label[for='x1']:active {
+    transform: scale(.98);
+    box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+}
+
+
+
+
+label[for='merchant-field'],label[for='l2'],label[for='m2'],label[for='v2'],label[for='x2'] {
+    font-size: 14px;
+   
+    text-align: center;
+    box-shadow: 17px 12px 18px -12px rgba(0,0,0,0.8);
+    color: black;
+    background-color: #476072;
+    width: 80%;
+    height: 5rem;
+    line-height: 5rem;
+    display: block;
+    cursor: pointer;
+    border-radius: 20px;
+    margin-bottom: 2rem;
+}
+
+label[for='merchant-field']:active {
+    transform: scale(.98);
+    box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+}
+label[for='l2']:active {
+    transform: scale(.98);
+    box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+}
+label[for='m2']:active {
+    transform: scale(.98);
+    box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+}
+label[for='v2']:active {
+    transform: scale(.98);
+    box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+}
+label[for='x2']:active {
+    transform: scale(.98);
+    box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+}
+
+
+label[for='sorcerer-field'],label[for='l3'],label[for='m3'],label[for='v3'],label[for='x3'] {
+    font-size: 14px;
+    
+    text-align: center;
+    box-shadow: 17px 12px 18px -12px rgba(0,0,0,0.8);
+    color: whitesmoke;
+    background-color: #2e4b5a;
+    width: 80%;
+    height: 5rem;
+    line-height: 5rem;
+    display: block;
+    cursor: pointer;
+    border-radius: 20px;
+    margin-bottom: 2rem;
+}
+label[for='sorcerer-field']:active {
+    transform: scale(.98);
+    box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+}
+label[for='l3']:active {
+    transform: scale(.98);
+    box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+}
+label[for='m3']:active {
+    transform: scale(.98);
+    box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+}
+label[for='v3']:active {
+    transform: scale(.98);
+    box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+}
+label[for='x3']:active {
+    transform: scale(.98);
+    box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+}
+
+
+label[for='sailor-field'],label[for='l4'],label[for='m4'],label[for='v4'],label[for='x4'] {
+    font-size: 14px;
+    margin-bottom: 3rem;
+    text-align: center;
+    box-shadow: 17px 12px 18px -12px rgba(0,0,0,0.8);
+    color: black;
+    background-color: #92a6b1;
+    width: 80%;
+    height: 5rem;
+    line-height: 5rem;
+    display: block;
+    cursor: pointer;
+    border-radius: 20px;
+}
+label[for='sailor-field']:active {
+    transform: scale(.98);
+    box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+}
+label[for='l4']:active {
+    transform: scale(.98);
+    box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+}
+label[for='m4']:active {
+    transform: scale(.98);
+    box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+}
+label[for='v4']:active {
+    transform: scale(.98);
+    box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+}
+label[for='x4']:active {
+    transform: scale(.98);
+    box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+}
+
+
+.prueba {
+    border: 3px solid aqua;
+}
+
+
+/* BOTONES */
+
+.boton {
+    display: flex;
+    justify-content: center;
+    
+    
+}
+
+.btn1 {
+    width: 50%;
+    height: 5rem;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background-color: #558776;
+    color: #182521;
+    text-transform: uppercase;
+    border-radius: 10px;
+    display: block;
+}
+
+.btn1:active {
+    border: 1px solid #558776;
+    background-color: #fff;
+    transform: scale(.98);
+    box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+}
+
+
+
+
+/* BREAK POINTS */
+
+@media(min-width: 768px) {
+
+
+    
+
+ .contenedor {
+     
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    width: 90%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+ }
+
+ label[for='bard-field'],label[for='l1'],label[for='m1'],label[for='v1'],label[for='x1'] {
+     width: 330px;
+     margin-bottom: 2rem;
+     margin-top: 5rem;
+     
+ }
+
+ label[for='merchant-field'],label[for='l2'],label[for='m2'],label[for='v2'],label[for='x2'] {
+     width: 330px;
+     margin-top: 5rem;
+     margin-bottom: 5rem;
+ }
+
+ label[for='sorcerer-field'],label[for='l3'],label[for='m3'],label[for='v3'],label[for='x3'] {
+    width: 330px;
+    margin-bottom: 10rem;
+    
+}
+
+label[for='sailor-field'],label[for='l4'],label[for='m4'],label[for='v4'],label[for='x4'] {
+    width: 330px;
+    margin-bottom: 10rem;
+    
+}
+
+.btn {
+    width: 20%;
+}
+
+}
+
+
+
+
+ @media(min-width:1116px) {
+ 
+        
+        
+         .contenedor {
+             
+            display: flex;
+            flex-direction: row;
+            margin: 0 auto;
+             
+            width: 90%;
+            flex-wrap: wrap;
+            justify-content: space-between;
+         }
+        
+         label[for='bard-field'],label[for='l1'],label[for='m1'],label[for='v1'],label[for='x1'] {
+            width: 400px;
+             margin-bottom: 30px;
+             
+         }
+        
+         label[for='merchant-field'],label[for='l2'],label[for='m2'],label[for='v2'],label[for='x2'] {
+            width: 400px;
+             
+         }
+        
+         label[for='sorcerer-field'],label[for='l3'],label[for='m3'],label[for='v3'],label[for='x3'] {
+            width: 400px;
+            margin-bottom: 10rem;
+            
+        }
+        
+        label[for='sailor-field'],label[for='l4'],label[for='m4'],label[for='v4'],label[for='x4'] {
+            width: 400px;
+            margin-bottom: 10rem;
+            
+        }
+        .btn1 {
+            width: 20%;
+       
+        }
+        
+    
+}
+
+@media(min-width:1350px) {
+    
+        
+            
+        
+         .contenedor {
+             
+            display: flex;
+            flex-direction: row;
+             
+             
+            width: 90%;
+            flex-wrap: wrap;
+            justify-content: space-between;
+         }
+        
+         label[for='bard-field'],label[for='l1'],label[for='m1'],label[for='v1'],label[for='x1'] {
+            width: 550px;
+             margin-bottom: 30px;
+             
+         }
+        
+         label[for='merchant-field'],label[for='l2'],label[for='m2'],label[for='v2'],label[for='x2'] {
+            width: 550px;
+             
+         }
+        
+         label[for='sorcerer-field'],label[for='l3'],label[for='m3'],label[for='v3'],label[for='x3'] {
+            width: 550px;
+            margin-bottom: 10rem;
+            
+        }
+        
+        label[for='sailor-field'],label[for='l4'],label[for='m4'],label[for='v4'],label[for='x4'] {
+            width: 550px;
+            margin-bottom: 10rem;
+            
+        }
+
+        .btn1 {
+            width: 20%;
+        }
+   
+}
+
+@media(min-width:1850px) {
+    
+        
+            
+        
+    .contenedor {
+        
+       display: flex;
+       flex-direction: row;
+       margin: 0 auto;
+        
+       width: 100%;
+       flex-wrap: wrap;
+       justify-content: space-evenly;
+    }
+   
+    label[for='bard-field'],label[for='l1'],label[for='m1'],label[for='v1'],label[for='x1'] {
+       width: 650px;
+        margin-bottom: 30px;
+        
+    }
+   
+    label[for='merchant-field'],label[for='l2'],label[for='m2'],label[for='v2'],label[for='x2'] {
+       width: 650px;
+        
+    }
+   
+    label[for='sorcerer-field'],label[for='l3'],label[for='m3'],label[for='v3'],label[for='x3'] {
+       width: 650px;
+       margin-bottom: 30px;
+       
+   }
+   
+   label[for='sailor-field'],label[for='l4'],label[for='m4'],label[for='v4'],label[for='x4'] {
+       width: 650px;
+       margin-bottom: 30px;
+       
+   }
+
+   .btn1 {
+       width: 20%;
+   }
+
+}
